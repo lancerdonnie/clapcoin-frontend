@@ -1,4 +1,5 @@
 import { Navbar } from 'components/Navbar';
+import { Values } from 'components/Values';
 import Head from 'next/head';
 import styles from 'styles/Home.module.css';
 
@@ -31,6 +32,29 @@ export default function Home() {
           <div className="text-center mt-4">
             POWERED BY <a href="http://www.clapmi.com">WWW.CLAPMI.COM</a>
           </div>
+        </div>
+      </div>
+      <div className="flex mt-12 p-8" style={{ backgroundColor: 'slategrey' }}>
+        <div className="w-1/2">
+          <div className="text-center text-xl">OUR VALUES</div>
+          <ul className="mt-8">
+            <Values
+              title="Community Driven"
+              body="our clappers teams are of selfless and community driven
+                mindsets."
+            />
+            <Values
+              title="Glass Operations"
+              body="the clap community strictly operates under transparency, as
+              every clapper dev team member is a community growth enthusiast"
+            />
+          </ul>
+        </div>
+        <div className="flex-auto flex justify-center items-center">
+          <img
+            className="h-[400px]"
+            src="https://safemoon.net/img/home/team.svg"
+          />
         </div>
       </div>
     </div>
