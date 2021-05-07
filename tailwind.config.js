@@ -6,13 +6,22 @@ module.exports = {
     extend: {
       colors: {
         nav: {
-          // DEFAULT: '#010123',
           DEFAULT: 'rgb(13 13 80)',
         },
         accent: {
           DEFAULT: '#DAA520',
           2: '#5c1ed6',
         },
+        alt: {
+          DEFAULT: '#010123',
+        },
+      },
+      screens: {
+        sm: { max: '640px' },
+        md: { max: '768px' },
+        lg: { max: '1024px' },
+        xl: { max: '1280px' },
+        '2xl': { max: '1536px' },
       },
       fontFamily: {
         dm: ['DM Sans'],

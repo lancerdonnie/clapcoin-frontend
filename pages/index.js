@@ -20,7 +20,7 @@ export default function Home() {
         <div className="text-5xl text-center font-bold -mt-16 font-space">
           CLAPCOIN
         </div>
-        <div className="w-7/12  mx-auto mt-8 text-lg">
+        <div className="w-7/12 lg:w-10/12  mx-auto mt-8 text-lg">
           <div className="text-justify">
             Clapcoin is the open source person to person{' '}
             <span className="text-accent">community</span> digital currency,
@@ -35,8 +35,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex mt-12 p-8" style={{ backgroundColor: '#010123' }}>
-        <div className="w-1/2">
+      <div className="flex md:block mt-12 p-8 bg-alt">
+        <div className="w-1/2 md:w-full">
           <div className="text-center text-xl">OUR VALUES</div>
           <ul className="mt-8">
             <Values
@@ -58,12 +58,12 @@ export default function Home() {
           />
         </div>
       </div>
-      <footer className="h-96 flex flex-col items-center justify-center font-bold">
+      <footer className="h-96 flex flex-col items-center justify-center font-bold px-2">
         <FooterIcons />
         <div className="mt-12">
           Copyright © {new Date().getFullYear()}, ClapCoin.{' '}
         </div>
-        <div className="mt-12">
+        <div className="mt-12 text-center">
           All trademarks and copyrights belong to their respective owners.
         </div>
       </footer>
