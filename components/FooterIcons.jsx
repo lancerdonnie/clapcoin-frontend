@@ -1,10 +1,15 @@
+import Link from 'next/link';
 import React from 'react';
 import { Instagram } from './Svg';
 import { Youtube } from './Svg';
 import { Twitter } from './Svg';
 
 const IconWrapper = ({ children }) => {
-  return <div className="w-8 bg-white rounded p-1">{children}</div>;
+  return (
+    <Link href="">
+      <div className="w-8 bg-white rounded p-1 cursor-pointer">{children}</div>
+    </Link>
+  );
 };
 
 export const FooterIcons = () => {
