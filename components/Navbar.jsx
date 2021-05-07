@@ -16,8 +16,11 @@ export const Navbar = () => {
         <Link href="/about">
           <a>About</a>
         </Link>
-        <Link href="/about">
+        <Link href="/team">
           <a>Our Team</a>
+        </Link>
+        <Link href="/app">
+          <a className="rounded p-2 bg-accent">ClapCoin App</a>
         </Link>
       </div>
     </div>

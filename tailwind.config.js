@@ -8,10 +8,14 @@ module.exports = {
         nav: {
           DEFAULT: '#010123',
         },
+        accent: {
+          DEFAULT: '#5c1ed6',
+        },
       },
       fontFamily: {
         dm: ['DM Sans'],
         mont: ['Montserrat'],
+        space: ['Space Mono'],
       },
       // fontSize: {
       //   md: '14px',
