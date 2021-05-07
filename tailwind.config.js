@@ -3,7 +3,20 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        nav: {
+          DEFAULT: '#010123',
+        },
+      },
+      fontFamily: {
+        dm: ['DM Sans'],
+        mont: ['Montserrat'],
+      },
+      // fontSize: {
+      //   md: '14px',
+      // },
+    },
   },
   variants: {
     extend: {},
