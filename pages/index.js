@@ -1,4 +1,6 @@
+import { FooterIcons } from 'components/FooterIcons';
 import { Navbar } from 'components/Navbar';
+import { Twitter } from 'components/Svg';
 import { Values } from 'components/Values';
 import Head from 'next/head';
 import styles from 'styles/Home.module.css';
@@ -14,7 +16,7 @@ export default function Home() {
       <Navbar />
       <div>
         <div className="flex justify-center">
-          <img src="logo.png" width="300px" className="" />
+          <img src="logo.png" width="300px" />
         </div>
         <div className="text-5xl text-center font-bold -mt-16 font-space">
           CLAPCOIN
@@ -34,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex mt-12 p-8" style={{ backgroundColor: 'slategrey' }}>
+      <div className="flex mt-12 p-8" style={{ backgroundColor: '#010123' }}>
         <div className="w-1/2">
           <div className="text-center text-xl">OUR VALUES</div>
           <ul className="mt-8">
@@ -57,6 +59,15 @@ export default function Home() {
           />
         </div>
       </div>
+      <footer className="h-96 flex flex-col items-center justify-center font-bold">
+        <FooterIcons />
+        <div className="mt-12">
+          Copyright © {new Date().getFullYear()}, ClapCoin.{' '}
+        </div>
+        <div className="mt-12">
+          All trademarks and copyrights belong to their respective owners.
+        </div>
+      </footer>
     </div>
   );
 }

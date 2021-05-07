@@ -6,10 +6,12 @@ module.exports = {
     extend: {
       colors: {
         nav: {
-          DEFAULT: '#010123',
+          // DEFAULT: '#010123',
+          DEFAULT: 'rgb(13 13 80)',
         },
         accent: {
-          DEFAULT: '#5c1ed6',
+          DEFAULT: '#DAA520',
+          2: '#5c1ed6',
         },
       },
       fontFamily: {
