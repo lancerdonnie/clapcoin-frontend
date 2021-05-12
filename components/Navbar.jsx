@@ -19,7 +19,7 @@ export const Navbar = () => {
         <Link href="/team">
           <a>Our Team</a>
         </Link>
-        <Link href="/app">
+        <Link href="/login">
           <a className="rounded p-2 bg-accent-2 text-center">ClapCoin App</a>
         </Link>
       </div>
