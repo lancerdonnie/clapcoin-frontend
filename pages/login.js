@@ -3,6 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Input } from 'components/Form/Input';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { RECAPATCHA_SITE_KEY } from 'lib/constants';
 
 const resolver = yupResolver(
   yup.object().shape({
@@ -36,7 +37,12 @@ export default function login() {
           Forgot password?
         </a>
         <div className="mt-2 flex justify-center">
-          <ReCAPTCHA sitekey="Your client site key" onChange={() => {}} />
+          <ReCAPTCHA
+            sitekey={RECAPATCHA_SITE_KEY}
+            onChange={(e) => {
+              console.log(e);
+            }}
+          />
         </div>
         <button
           className="mt-4 rounded block bg-yellow-500 w-full px-4 py-2"
