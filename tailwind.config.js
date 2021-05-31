@@ -27,6 +27,8 @@ module.exports = {
         dm: ['DM Sans'],
         mont: ['Montserrat'],
         space: ['Space Mono'],
+        rubik: ['Rubik'],
+        inter: ['Inter'],
       },
       // fontSize: {
       //   md: '14px',
