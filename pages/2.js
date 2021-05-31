@@ -24,7 +24,7 @@ const Header = () => {
         <LightButton style={{ padding: '14px 64px', marginTop: 70 }} />
       </div>
       <div>
-        <img src="illustration.png" />
+        <img src="/illustration.png" />
       </div>
     </div>
   );
