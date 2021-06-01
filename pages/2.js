@@ -36,12 +36,14 @@ const Section1 = () => {
 
 const Main = () => {
   return (
-    <div className="mt-44">
+    <div className="mt-44 relative">
       <p className="main__header font-bold text-center text-[2.5rem] h-[155px] leading-[150%] relative">
         What is Clapcoin?
       </p>
-      <div className="w-4/5 mx-auto text-center leading-[45px] text-2xl">
-        <p>
+      <img className="absolute top-[20%]" src="coin2.png" />
+      <img className="absolute top-[43%]" src="coin3.png" />
+      <div className="w-3/5 mx-auto text-center leading-[45px] text-2xl ">
+        <p className="">
           Clapcoin is an open source; peer to peer, community driven digital
           currency, built on binance smart chain. Clapcoin derives it's pride
           base on it's utility to serve as a pinnacle of social media digital
@@ -78,7 +80,9 @@ const Header = () => {
         style={{ flexBasis: '54%', flexShrink: 0 }}
         className="font-bold flex flex-col items-start text-[4rem]"
       >
-        <div>The biggest social gold and store of value after Bitcoin</div>
+        <div className="leading-[76px]">
+          The biggest social gold and store of value after Bitcoin
+        </div>
         <LightButton style={{ padding: '14px 64px', marginTop: 70 }} />
       </div>
       <div className="relative">
