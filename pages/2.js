@@ -14,10 +14,25 @@ export default function Index2() {
 
 const Section1 = () => {
   return (
-    <div className="mt-14">
+    <div className="mt-20">
       <p className="section1__header font-bold text-center text-[2.5rem] h-[155px] leading-[150%] relative">
         Core Values
       </p>
+      <div className="flex mt-10 mx-20 gap-20 text-2xl">
+        <Core
+          title="Transparency"
+          body="100% peer to peer with transparency ensured by the team in all
+          aspects."
+        />
+        <Core
+          title="Proper Reward"
+          body=" With clapcoin all content and social activities will be rewarded as it should be."
+        />
+        <Core
+          title="Community Driven"
+          body="Clapcoin is 100% community driven with that in mind all decisions will represent a consensus of the community"
+        />
+      </div>
       <style jsx>{`
         .section1__header::after {
           content: '';
@@ -30,6 +45,16 @@ const Section1 = () => {
           transform: translateX(-50%);
         }
       `}</style>
+    </div>
+  );
+};
+
+const Core = ({ title, body }) => {
+  return (
+    <div className="flex flex-col flex-1 items-center text-center">
+      <img className="w-20" src="coin4.png" />
+      <div className="mt-12 font-bold ">{title}</div>
+      <div className="mt-4 leading-7">{body}</div>
     </div>
   );
 };
